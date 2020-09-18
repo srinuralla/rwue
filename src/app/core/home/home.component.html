@@ -16,7 +16,7 @@
   <div class="container mission py-2">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row mt-3">
+    <div class="row mt-3 d-flex justify-content-around">
       <div class="col-lg-4">
         <div class="d-flex justify-content-center">
           <img src="assets/images/wemp.jpg " class=" rounded-circle" width="140" height="140">
@@ -26,14 +26,7 @@
         <h3>Women Unemployment</h3>
         <p>Women's empowerment is the process of empowering women. Empowerment can be defined in many ways, however,
           when talking about women's empowerment, empowerment means accepting and allowing people (women) who are on the
-          outside of the decision-making process into it. Women’s empowerment is the most crucial point to be noted for
-          the overall development of a country. Empowerment is the process that creates power in individuals over their
-          own lives, society, and in their communities. People are empowered when they are able to access the
-          opportunities available to them without limitations and restrictions such as in education, profession and
-          lifestyle. Feeling entitled to make your own decisions creates a sense of empowerment. Empowerment includes
-          the action of raising the status of women through education, raising awareness, literacy, and training.
-          Women's empowerment is all about equipping and allowing women to make life-determining decisions through the
-          different problems in society.</p>
+          outside of the decision-making process into it. </p>
         <p><a class="btn btn-secondary" [routerLink]="['/unemployment']" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -44,8 +37,7 @@
         <h3>Women Education</h3>
         <p>Women education refers to every form of education that aims at improving the knowledge, and skill of women
           and girls. It includes general education at schools and colleges, vocational and technical education,
-          professional education, health education, etc. Women education encompasses both literary and non-literary
-          education.
+          professional education, health education, etc.
         </p>
         <p><a [routerLink]="['/education/women']" class="btn btn-secondary" role="button">View details &raquo;</a>
         </p>
@@ -109,29 +101,12 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
         <div class="col-md-3">
-          <div class="card gedf-card">
+          <h4><b>NEWS</b></h4>
+          <div class="card gedf-card" *ngFor="let item of newsDetails">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-          <div class="card gedf-card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <p class="card-text">{{item.news}}</p>
             </div>
           </div>
         </div>

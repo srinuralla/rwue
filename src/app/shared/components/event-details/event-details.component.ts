@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./event-details.component.scss'],
 })
 export class EventDetailsComponent implements OnInit {
+  @Input() event;
   @Input() eventDetails;
   constructor() {}
 

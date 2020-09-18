@@ -1,66 +1,42 @@
 [
-{
-eventName:'Women Empowerment',
-eventId:'1',
-eventDescription:"Women's empowerment is the process of empowering women.
-Empowerment can be defined in many ways, however, when talking about women's empowerment, 
-empowerment means accepting and allowing people (women) who are on the outside of the decision-making process into it. 
-Women’s empowerment is the most crucial point to be noted for the overall development of a country. 
-Empowerment is the process that creates power in individuals over their own lives, society, and in their communities. 
-People are empowered when they are able to access the opportunities available to them without limitations and restrictions such as in education, 
-profession and lifestyle. Feeling entitled to make your own decisions creates a sense of empowerment. 
-Empowerment includes the action of raising the status of women through education, raising awareness, literacy, and training.
-Women's empowerment is all about equipping and allowing women to make life-determining decisions through the different
-problems in society",
-volunteeerList:"Yellamma,Nikhil,Gokul,Nandini",
-newsAndAnnouncements:"",
-},
-{
-eventName:'Techie Women',
-eventId:'2',
-eventDescription:"Women and girls are underrepresented in Information Communication Technology (ICT), 
-most of all in rural areas where women do not have phones or computers. Literacy is also an
-insurmountable obstacle to being part of the digital arena, and two-thirds of the 
-700 million adults who are illiterate are women. Though the number of digital initiatives 
-have increased in the last few years, Ms. Corat said, there still is greater difficulty 
-impacting rural areas. The panel discussed the programs they have implemented to 
-empower women and girls in urban and rural settings through training in
-STEM (Science, Technology, Engineering, and Mathematics) and ICT skills",
-volunteeerList:"Rajeswari,Poornima",
-newsAndAnnouncements:"",
-
-},
-{
-eventName:'Healthy Women Talks',
-eventId:'3',
-eventDescription:"Women's health refers to the health of women, which differs from that 
-of men in many unique ways. Women's health is an example of population health, 
-where health is defined by the World Health Organization as "a state of complete physical, 
-mental and social well-being and not merely the absence of disease or infirmity".
-Often treated as simply women's reproductive health, many groups argue for a broader 
-definition pertaining to the overall health of women, better expressed as "The health of women",
-volunteeerList:"Praveena,Sushitha"
-newsAndAnnouncements:"",
-
-},
-{
-eventName:'Making money out of their skills',
-eventId:'4',
-eventDescription:"Women’s economic empowerment boosts productivity, increases economic diversification
- and income equality in addition to other positive development outcomes. For example, increasing
- the female employment rates in OECD countries to match that of Sweden, could boost GDP by over 
- USD 6 trillion,recognizing, however, that. growth does not automatically lead to a reduction
- in gender-based inequality. Conversely, it is estimated that gender gaps cost the economy some
- 15 percent of GDP.Increasing women’s and girls’ educational attainment contributes to women’s
- economic empowerment and more inclusive economic growth. Education, upskilling and re-skilling
- over the life course – especially to keep pace with rapid technological and digital transformations 
- affecting jobs—are critical for women’s and girl’s health and wellbeing, as well as their income-generation
- opportunities and participation in the formal labour market. Increased educational attainment accounts for 
- about 50 per cent of the economic growth in OECD countries over the past 50 years. 
- But, for the majority of women, significant gains in education have not translated 
- into better labour market outcomes.",
-volunteeerList:"Vinay,Prasanna",
-newsAndAnnouncements:"",
-
-},
+  {
+    "eventName": "Women Empowerment",
+    "eventId": 1,
+    "eventDescription": "women's empowerment is the process of empowering women.Empowerment can be defined in many ways, however, when talking about women's empowerment, empowerment means accepting and allowing people who are on the outside of the decision-making process into it. Women’s empowerment is the most crucial point to be noted for the overall development of a country. Empowerment is the process that creates power in individuals over their own lives, society, and in their communities. People are empowered when they are able to access the opportunities available to them without limitations and restrictions such as in education, profession and lifestyle. Feeling entitled to make your own decisions creates a sense of empowerment. Empowerment includes the action of raising the status of women through education, raising awareness, literacy, and training.women's empowerment is all about equipping and allowing women to make life-determining decisions through the differentproblems in society",
+    "volunteerList": "Yellamma,Nikhil,Gokul,Nandini",
+    "newsAndAnnouncements": "",
+    "location": "Madhavarm",
+    "organizer": "Nandini",
+    "daysToGo": "2"
+  },
+  {
+    "eventName": "Techie women",
+    "eventId": 2,
+    "eventDescription": "Women and girls are underrepresented in Information Communication Technology (ICT), most of all in rural areas where women do not have phones or computers. Literacy is also aninsurmountable obstacle to being part of the digital arena, and two-thirds of the 700 million adults who are illiterate are women. Though the number of digital initiatives have increased in the last few years, Ms. Corat said, there still is greater difficulty impacting rural areas. The panel discussed the programs they have implemented to empower women and girls in urban and rural settings through training inSTEM (Science, Technology, Engineering, and Mathematics) and ICT skills",
+    "volunteerList": "Rajeswari,Poornima",
+    "newsAndAnnouncements": "",
+    "location": "Sadkapalli",
+    "organizer": "Nandini",
+    "daysToGo": "3"
+  },
+  {
+    "eventName": "Healthy Women Talks",
+    "eventId": 3,
+    "eventDescription": "Women health refers to the health of women, which differs from that of men in many unique ways. women's health is an example of population health, where health is defined by the World Health Organization as a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity.Often treated as simply women's reproductive health, many groups argue for a broader definition pertaining to the overall health of women, better expressed as 'The health of women'",
+    "volunteerList": "Praveena,Sushitha",
+    "newsAndAnnouncements": "",
+    "location": "Bodupalli",
+    "organizer": "Nandini",
+    "daysToGo": "10"
+  },
+  {
+    "eventName": "Making money out of their skills",
+    "eventId": 4,
+    "eventDescription": "Womens economic empowerment boosts productivity, increases economic diversification and income equality in addition to other positive development outcomes. For example, increasingthe female employment rates in OECD countries to match that of Sweden, could boost GDP by over USD 6 trillion,recognizing, however, that. growth does not automatically lead to a reductionin gender-based inequality. Conversely, it is estimated that gender gaps cost the economy some15 percent of GDP.Increasing women’s and girls’ educational attainment contributes to women’seconomic empowerment and more inclusive economic growth. Education, upskilling and re-skillingover the life course – especially to keep pace with rapid technological and digital transformations affecting jobs—are critical for women’s and girl’s health and wellbeing, as well as their income-generationopportunities and participation in the formal labour market. Increased educational attainment accounts for about 50 per cent of the economic growth in OECD countries over the past 50 years. But, for the majority of women, significant gains in education have not translated into better labour market outcomes.",
+    "volunteerList": "Vinay,Prasanna",
+    "newsAndAnnouncements": "",
+    "location": "Machupalli",
+    "organizer": "Nandini",
+    "daysToGo": "4"
+  }
 ]

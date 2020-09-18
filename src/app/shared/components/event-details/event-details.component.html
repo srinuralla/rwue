@@ -1,23 +1,37 @@
-<div class="container-fluid home-main">
-  <h2>Event Name <span class="blinker">{{eventDetails.eventName}}</span></h2>
-  <button type="button" class="btn btn-default">Join Event</button>
-</div>
 <div class="container-fluid home-content1">
   <div class="row">
     <div class="col-md-6 content1-left">
-      <!-- <h3>Event Details <span class="blinker">{{ eventDetails.}}</span></h3> -->
-      <p>Event Descripption</p>
-      <div class="content1-left">
-        {{eventDetails.eventDescription}}
-      </div>
+      <button type="button" class="btn btn-default float-right">Join
+        Event</button>
+
+      <h2><span>{{eventDetails.eventName}}</span></h2>
+
+      <h4>Participants List</h4>
+      <p>{{ eventDetails.volunteerList}}</p>
+
+      <h4>Organizer</h4>
+      <p>{{ eventDetails.organizer}}</p>
+      <h4>Location</h4>
+      <p>{{ eventDetails.location}}</p>
+      <span class="text-mute">
+        <h4>Scheduled </h4>
+        <div class="mb-1 text-muted small">
+          Date: {{event.eventDate}} &nbsp;&nbsp;
+          Start Time : {{event.startTime }} &nbsp;&nbsp;
+          End Time : {{event.endTime}}
+        </div>
+        <p>{{ eventDetails.daysToGo}} Days To Go...</p>
+      </span>
     </div>
     <div class="col-md-6 content1-right">
-      <h4>Participents List</h4>
-      <p>{{ eventDetails.volunteeerList}}</p>
+      <b>Event Description</b>
+      <div class="content1-left">
+        {{eventDetails.eventDescription}}
 
+      </div>
     </div>
   </div>
 </div>
-<div class="container-fluid home-content2">
+<div class="container-fluid home-content2" *ngIf="eventDetails.newsAndAnnouncements">
   <p>{{eventDetails.newsAndAnnouncements}} </p>
 </div>
