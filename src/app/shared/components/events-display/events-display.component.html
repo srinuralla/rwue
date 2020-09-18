@@ -1,1 +1,26 @@
-
+<div class="container">
+  <div class="row">
+    <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+      <ul *ngFor="let item of eventList" class="event-list">
+        <li>
+          <span class="year">{{item.eventDate | date:'short'}}</span>
+          <span class="time">{{item.noOfDays}}</span>
+          <img alt="Independence Day" src="{{item.image}}" />
+          <div class="info">
+            <h2 class="title" (click)="navigateClick(item)">{{item.title}}</h2>
+          </div>
+          <div class="social">
+            <ul>
+              <li class="facebook" style="width:33%;" *ngIf="item.facebookLink"><a href="{{item.facebookLink}}"><span
+                    class="fa fa-facebook"></span></a></li>
+              <li class="twitter" style="width:34%;" *ngIf="item.twitterLink"><a href="{{item.twitterLink}}"><span
+                    class="fa fa-twitter"></span></a></li>
+              <li class="google-plus" style="width:33%;" *ngIf="item.googlePlueLink"><a
+                  href="{{item.googlePlueLink}}"><span class="fa fa-google-plus"></span></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
