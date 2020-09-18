@@ -11,8 +11,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class BasicAuthInterceptorService implements HttpInterceptor {
-  constructor(private authService: AuthService) {}
-
   intercept(
     request: HttpRequest<any>,
     next: HttpHandler
@@ -25,7 +23,7 @@ export class BasicAuthInterceptorService implements HttpInterceptor {
         },
       });
     } else {
-      this.authService.logOut();
+      window.location.href = `${window.location.origin}/login`;
     }
 
     return next.handle(request);
