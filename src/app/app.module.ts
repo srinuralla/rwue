@@ -11,18 +11,19 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BasicAuthInterceptorService } from './services/basic-auth-interceptor.service';
 import { ToastrModule } from 'ngx-toastr';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { VolunteerRegistrationComponent } from './modules/volunteer-registration/volunteer-registration.component';
+
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, VolunteerRegistrationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     ReactiveFormsModule,
-    ToastrModule.forRoot({
-      positionClass: 'toast-top-center',
-    }),
+    ToastrModule.forRoot(),
   ],
   providers: [
     {
@@ -33,4 +34,4 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

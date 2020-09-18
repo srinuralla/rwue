@@ -2,6 +2,8 @@ import { LoginComponent } from './modules/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuardService } from './services/auth-guard.service';
+import { VolunteerRegistrationComponent } from './modules/volunteer-registration/volunteer-registration.component';
+
 
 const routes: Routes = [
   {
@@ -26,10 +28,13 @@ const routes: Routes = [
         (m) => m.EducationModule
       ),
   },
+  { path: 'register', component: VolunteerRegistrationComponent }
+
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

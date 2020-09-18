@@ -11,19 +11,19 @@
         <div class="form-group">
           <label>User Name</label>
           <input type="text" class="form-control" formControlName="userName" placeholder="User Name">
-          <span *ngIf="loginForm.get('userName').hasError('required')">Username is
+          <span *ngIf="loginForm.get('username').hasError('required')">Username is
             required
           </span>
         </div>
         <div class="form-group">
           <label>Password</label>
           <input type="password" class="form-control" formControlName="password" placeholder="Password">
-          <span *ngIf="loginForm.get('password').hasError('required')">Password is
+          <span *ngIf="loginForm.get('username').hasError('Password')">Password is
             required
           </span>
         </div>
         <div class="d-flex justify-content-between">
-          <button type="submit" class="btn btn-black" [disabled]="loginForm.invalid" (click)="submit()">Login</button>
+          <button type="submit" class="btn btn-black" (click)="submit()">Login</button>
           <button type="submit" class="btn btn-secondary" (click)="registerUser()">Register</button>
         </div>
       </form>

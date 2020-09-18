@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import users from './../../../assets/users.json';
-import { AuthService } from 'src/app/services/auth-service.service';
 
 @Component({
   selector: 'app-login',
@@ -15,16 +14,12 @@ export class LoginComponent implements OnInit {
     userName: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
-  constructor(
-    private router: Router,
-    private toastr: ToastrService,
-    private authService: AuthService
-  ) {}
+  constructor(private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
 
   submit() {
-    // this.authService.logout();
+    console.log(this.loginForm.value);
     let user = users.find(
       (x) =>
         x.username.toLowerCase() === this.loginForm.value.userName.toLowerCase()
