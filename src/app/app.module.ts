@@ -10,6 +10,7 @@ import { LoginComponent } from './modules/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BasicAuthInterceptorService } from './services/basic-auth-interceptor.service';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent, LoginComponent],
@@ -19,6 +20,7 @@ import { BasicAuthInterceptorService } from './services/basic-auth-interceptor.s
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
     {

@@ -1,5 +1,8 @@
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import users from './../../../assets/users.json';
 
 @Component({
   selector: 'app-login',
@@ -11,12 +14,34 @@ export class LoginComponent implements OnInit {
     userName: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
   });
-  constructor() {}
+  constructor(private router: Router, private toastr: ToastrService) {}
 
   ngOnInit(): void {}
 
   submit() {
     console.log(this.loginForm.value);
-    localStorage.setItem('rwue_token', 'token');
+    let user = users.find(
+      (x) =>
+        x.username.toLowerCase() === this.loginForm.value.userName.toLowerCase()
+    );
+    if (user) {
+      if (user.password === this.loginForm.value.password) {
+        localStorage.setItem('rwue_token', 'token');
+        localStorage.setItem('user_name', this.loginForm.value.userName);
+        this.toastr.success('Login Successfully');
+        //  Navigate  Dashboard
+        this.router.navigate(['']);
+      }
+    } else {
+      this.toastr.error(
+        'Please verify credential',
+        'Invalid Username/Password'
+      );
+    }
+  }
+
+  registerUser() {
+    // Register page navigate
+    this.router.navigate(['register']);
   }
 }

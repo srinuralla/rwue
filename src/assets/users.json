@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "username": "yellamma",
+    "password": "yb",
+    "role": "user"
+  },
+  {
+    "id": 2,
+    "username": "nikhil",
+    "password": "np",
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "username": "manikanth",
+    "password": "mb",
+    "role": "user"
+  },
+  {
+    "id": 4,
+    "username": "nandini",
+    "password": "npa",
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "username": "srinivas",
+    "password": "sr",
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "username": "gokul",
+    "password": "gc",
+    "role": "admin"
+  },
+  {
+    "id": 7,
+    "username": "admin",
+    "password": "admin",
+    "role": "admin"
+  }
+]

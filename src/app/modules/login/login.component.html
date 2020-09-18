@@ -17,8 +17,8 @@
           <input type="password" class="form-control" formControlName="password" placeholder="Password">
         </div>
         <div class="d-flex justify-content-between">
-          <button type="submit" class="btn btn-black">Login</button>
-          <button type="submit" class="btn btn-secondary">Register</button>
+          <button type="submit" class="btn btn-black" (click)="submit()">Login</button>
+          <button type="submit" class="btn btn-secondary" (click)="registerUser()">Register</button>
         </div>
       </form>
     </div>
