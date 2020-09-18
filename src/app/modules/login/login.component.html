@@ -1,0 +1,26 @@
+<div class="sidenav">
+  <div class="login-main-text">
+    <h2>RWE<br> Login Page</h2>
+    <p>RWE</p>
+  </div>
+</div>
+<div class="main d-flex justify-content-center">
+  <div class="col-md-6 col-sm-12">
+    <div class="login-form">
+      <form [formGroup]="loginForm">
+        <div class="form-group">
+          <label>User Name</label>
+          <input type="text" class="form-control" formControlName="userName" placeholder="User Name">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" formControlName="password" placeholder="Password">
+        </div>
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn btn-black">Login</button>
+          <button type="submit" class="btn btn-secondary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
