@@ -10,16 +10,17 @@ import users from './../../../assets/users.json';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup = new FormGroup({
-    userName: new FormControl('', Validators.required),
-    password: new FormControl('', Validators.required),
-  });
+  loginForm: FormGroup;
   constructor(private router: Router, private toastr: ToastrService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.loginForm = new FormGroup({
+      userName: new FormControl('', Validators.required),
+      password: new FormControl('', Validators.required),
+    });
+  }
 
   submit() {
-    console.log(this.loginForm.value);
     let user = users.find(
       (x) =>
         x.username.toLowerCase() === this.loginForm.value.userName.toLowerCase()
@@ -30,7 +31,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem('user_name', this.loginForm.value.userName);
         this.toastr.success('Login Successfully');
         //  Navigate  Dashboard
-        this.router.navigate(['']);
+        this.router.navigate(['/']);
       }
     } else {
       this.toastr.error(
@@ -42,6 +43,6 @@ export class LoginComponent implements OnInit {
 
   registerUser() {
     // Register page navigate
-    this.router.navigate(['register']);
+    this.router.navigate(['/register']);
   }
 }

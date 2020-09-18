@@ -3,3 +3,7 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "~ngx-toastr/toastr-bs4-alert";
+.error {
+  color: red;
+  font-size: 10px;
+}
