@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { LayoutComponent } from './modules/layout/layout.component';
 import { LoginComponent } from './modules/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -14,7 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -12,7 +12,8 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#">About Us
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Help</a>
@@ -24,7 +25,10 @@
           <a class="nav-link" href="#">ContactUs</a>
         </li>
       </ul>
-      <button class="btn btn-outline-primary  my-2 my-sm-0" type="submit">Login</button>
+      <button class="btn btn-outline-primary  my-2 my-sm-0" *ngIf="isLogin|async " [routerLink]="['/login']"
+        routerLinkActive="router-link-active">Login</button>
+
+      <button class="btn btn-outline-primary  my-2 my-sm-0" *ngIf="!(isLogin| async)" (click)="logout()">Logout</button>
     </div>
   </nav>
 </div>
