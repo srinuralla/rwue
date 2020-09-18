@@ -6,7 +6,7 @@ import { EducationComponent } from './education.component';
 const routes: Routes = [
   { path: '', component: EducationComponent },
   {
-    path: 'women-education',
+    path: 'women',
     component: EducationComponent,
     loadChildren: () =>
       import('./modules/women-education/women-education.module').then(
@@ -14,7 +14,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'child-education',
+    path: 'child',
     component: EducationComponent,
     loadChildren: () =>
       import('./modules/child-education/child-education.module').then(
