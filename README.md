@@ -18,3 +18,6 @@ Steps:
 2. Run npm install
 3. run ng s --port 5000 (Make sure th epost is open)
 4. You can view application in localhost:4200
+5. Login using
+  username: admin
+  password: admin
