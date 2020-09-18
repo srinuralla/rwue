@@ -15,20 +15,8 @@
   </div>
   <div class="container mission py-2">
 
-    <!-- Three columns of text below the carousel -->
     <div class="row mt-3 d-flex justify-content-around">
-      <div class="col-lg-4">
-        <div class="d-flex justify-content-center">
-          <img src="assets/images/wemp.jpg " class=" rounded-circle" width="140" height="140">
 
-        </div>
-
-        <h3>Women Unemployment</h3>
-        <p>Women's empowerment is the process of empowering women. Empowerment can be defined in many ways, however,
-          when talking about women's empowerment, empowerment means accepting and allowing people who are on the
-          outside of the decision-making process into it. </p>
-        <p><a class="btn btn-secondary" [routerLink]="['/unemployment']" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <div class="d-flex justify-content-center mb-2">
           <img src="assets/images/women_edu.jpg " class=" rounded-circle" width="140" height="140">
@@ -38,19 +26,34 @@
         <p>Women education refers to every form of education that aims at improving the knowledge, and skill of women
           and girls. It includes general education at schools and colleges, vocational and technical education,
           professional education, health education, etc.
+
         </p>
         <p><a [routerLink]="['/education/women']" class="btn btn-secondary" role="button">View details &raquo;</a>
         </p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <div class="d-flex justify-content-center mb-2">
+        <div class="d-flex justify-content-center">
+          <img src="assets/images/wemp.jpg " class=" rounded-circle" width="140" height="140">
+
+        </div>
+
+        <h3>Women Unemployment</h3>
+        <p>Women's empowerment is the process of empowering women.
+          When talking about women's empowerment, empowerment means accepting and allowing people who are on the
+          outside of the decision-making process into it. <br>
+        </p>
+        <br>
+        <p><a class="btn btn-secondary" [routerLink]="['/unemployment']" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-center">
           <img src="assets/images/education.jpg " class=" rounded-circle" width="140" height="140">
 
         </div>
         <h3>Child Education</h3>
         <p>Education sets in motion a virtuous spiral: girls and women gain greater knowledge, skills, self-confidence
           and capabilities, improving their own life prospects—and, in turn, an educated woman provides better
-          nutrition, health care, and education for her family</p>
+          nutrition, health care, and education for her family.</p>
         <p><a class="btn btn-secondary" [routerLink]="['/education/child']" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -61,53 +64,49 @@
         <div class="col-md-3">
           <div class="card">
             <div class="card-body">
-              <div class="h5">@LeeCross</div>
-              <div class="h7 text-muted">Fullname : Miracles Lee Cross</div>
+              <div class="h5">@Varadhi Achievments </div>
+              <div class="h7 text-muted">Making the Women rule India</div>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <div class="h6 text-muted">Followers</div>
-                <div class="h5">5.2342</div>
+                <div class="h6 text-muted">Events Happened </div>
+                <div class="h5">2,345</div>
               </li>
               <li class="list-group-item">
-                <div class="h6 text-muted">Following</div>
-                <div class="h5">6758</div>
+                <div class="h6 text-muted">Employment Provided </div>
+                <div class="h5">6,758</div>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-md-6 gedf-main  games-schedule">
-
-
+          <h3 style="
+          text-align: left;
+      "> Recent Events </h3>
           <div class="">
             <div class="games-schedule-items" *ngFor="let item of recentEvents">
               <div class="row games-team">
                 <div class="col-md-5">
-                  <img src="assets/images/slide1.jpg" style="width: 300px;height: 150px;">
+                  <img src="assets/images/slide1.jpg" style="height: 150px;">
                   <span>{{item.Header}}</span>
+                  <p><span class="glyphicon glyphicon-play-circle"></span> <small>{{item.EventDate}}</small></p>
+                </div>
+                <div class="col-md-7">
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque quod cum. Cupiditate
+                    architecto reprehenderit officia voluptatem eveniet, perspiciatis pariatur ipsum fugiat hic nostrum.
+                    sDignissimos quos quisquam consectetur animi sapiente.</p>
                 </div>
 
               </div>
-              <div class="row games-info">
-                <div class="col-md-12">
-                  <p><span class="glyphicon glyphicon-play-circle"></span> <small>{{item.EventDate}}</small></p>
-                  <p class="games-dash"></p>
-                  <p><small>{{item.newsAndAnnouncements}}</small></p>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <h4><b>NEWS</b></h4>
-          <div class="card gedf-card">
+          <div class="card gedf-card mt-2" *ngFor="let item of newsDetails">
             <div class="card-body">
-              <p class="card-text">{{newsOne.news}}</p>
-            </div>
-          </div>
-          <div class="card gedf-card" *ngFor="let item of newsDetails">
-            <div class="card-body">
-              <p class="card-text">{{newsTwo.news}}</p>
+              <p class="card-text">{{item.news}}</p>
             </div>
           </div>
         </div>
@@ -138,18 +137,19 @@
     <div class="container">
       <footer class="pt-4 pt-md-5 pb-md-4">
         <div class="row">
+          <div class="col-md-3">
+          </div>
           <div class="col-12 col-sm-6 col-md-3">
             <h5 class="tabs">VARADI</h5>
             <ul class="list text-small footer-list">
               <li><a class="text-muted" href="#">About us</a></li>
-              <li><a class="text-muted" href="#">Career</a></li>
               <li><a class="text-muted" href="#">Our works / References</a></li>
               <li><a class="text-muted" href="#">Contact us</a></li>
+              <li><a class="text-muted" href="#">...</a></li>
+
             </ul>
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
 
-          </div>
           <div class="col-12 col-sm-6 col-md-3">
             <h5 class="tabs">CONTACT US</h5>
             <ul class="list-unstyled text-small footer-list2">
@@ -159,15 +159,11 @@
               <li><a class="text-muted" href="#">Hyderabad 503001</a></li>
             </ul>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 text-center">
-
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-            </svg>
-
+          <div class="col-md-3">
           </div>
+
         </div>
-        <p class="copy-right"><i class="fa fa-copyright" aria-hidden="true"></i> 2018 Technoflair Solutions. All Rights
+        <p class="copy-right"><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Technoflair Solutions. All Rights
           Reserved.</p>
       </footer>
     </div>

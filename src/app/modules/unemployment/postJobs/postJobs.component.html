@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <div class="row" style="background-image: url('assets/images/wemp.jpg');
-background-repeat: no-repeat;
-background-size: 100% 100%; opacity: 0.9;">
+  <div class="row"
+    style="background-image: url('assets/images/wemp.jpg'),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ;background-repeat: no-repeat;background-size: 100% 100%; opacity: 0.7; background-blend-mode: overlay;">
 
     <div class="col-sm-7">
       <div class="container">
-        <form class="form form--register p-4 float-left" style="background-color: #F8F8FA; width: 30rem"
-          [formGroup]="postJobsForm" action="">
+        <form class="form form--register p-4 float-left"
+          style=" box-shadow: 10px 10px 5px black;background-color: #F8F8FA; width: 30rem" [formGroup]="postJobsForm"
+          action="">
 
           <div class="form__helper">
             <input type="text" name="title" formControlName="title" id="title" placeholder="title"
@@ -50,15 +50,15 @@ background-size: 100% 100%; opacity: 0.9;">
           </div>
           <div class="form__helper ">
             <input type="text" name="skills" formControlName="skills" id="skills" placeholder="Skills"
-              class="form__input">
+              class="form__input mt-2">
             <label class="form__label mt-2" for="decription">Skills</label>
           </div>
           <div class="form__helper ">
             <input type="text" name="decription" formControlName="decription" id="decription" placeholder="Description"
-              class="form__input">
+              class="form__input mt-2">
             <label class="form__label" for="decription">Description</label>
           </div>
-          <button type="submit" class="btn btn-secondary w-50 float-right" (click)="postJob()">Post</button>
+          <button type="submit" class="btn btn-secondary w-50 float-right mt-2" (click)="postJob()">Post</button>
         </form>
       </div>
     </div>
