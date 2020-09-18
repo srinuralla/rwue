@@ -8,7 +8,9 @@
     "location": "Madhavaram",
     "startTime": "10:30 AM",
     "endTime": "5:30 PM",
-    "facebookLink": null,
+    "facebookLink": "https://www.facebook.com/",
+    "googlePlueLink": "https://aboutme.google.com/u/0/",
+    "twitterLink": "https://aboutme.google.com/u/0/",
     "routeLink": "/education/women/event"
   },
   {
@@ -20,9 +22,9 @@
     "location": "Sadkapalli",
     "startTime": "10:30 AM",
     "endTime": "3:30 PM",
-    "facebookLink": null,
-    "googlePlueLink": null,
-    "twitterLink": null,
+    "facebookLink": "https://www.facebook.com/",
+    "googlePlueLink": "https://aboutme.google.com/u/0/",
+    "twitterLink": "https://aboutme.google.com/u/0/",
     "routeLink": "/education/women/event"
   },
   {
@@ -34,9 +36,9 @@
     "location": "bodupalli",
     "startTime": "10:30 AM",
     "endTime": "12:30 PM",
-    "facebookLink": null,
-    "googlePlueLink": null,
-    "twitterLink": null,
+    "facebookLink": "https://www.facebook.com/",
+    "googlePlueLink": "https://aboutme.google.com/u/0/",
+    "twitterLink": "https://aboutme.google.com/u/0/",
     "routeLink": "/education/women/event"
   },
   {
@@ -48,9 +50,9 @@
     "location": "machupalli",
     "startTime": "10:30 AM",
     "endTime": "1:30 PM",
-    "facebookLink": null,
-    "googlePlueLink": null,
-    "twitterLink": null,
+    "facebookLink": "https://www.facebook.com/",
+    "googlePlueLink": "https://aboutme.google.com/u/0/",
+    "twitterLink": "https://aboutme.google.com/u/0/",
     "routeLink": "/education/women/event"
   }
 ]

@@ -1,7 +1,7 @@
 <div class="container-fluid home-content1">
   <div class="row">
     <div class="col-md-6 content1-left">
-      <button type="button" class="btn btn-default float-right">Join
+      <button type="button" class="btn btn-default float-right" (click)="openModal(template)">Join
         Event</button>
 
       <h2><span>{{eventDetails.eventName}}</span></h2>
@@ -22,12 +22,20 @@
         </div>
         <p>{{ eventDetails.daysToGo}} Days To Go...</p>
       </span>
+      <div class="row d-flex justify-content-end">
+        <span class="facebook mr-2" *ngIf="event.facebookLink"><a href="{{event.facebookLink}}"><span
+              class="fa fa-facebook"></span></a></span>
+        <span class="twitter mr-2" *ngIf="event.twitterLink"><a href="{{event.twitterLink}}"><span
+              class="fa fa-twitter"></span></a></span>
+        <span class="google-plus mr-2" *ngIf="event.googlePlueLink"><a href="{{event.googlePlueLink}}"><span
+              class="fa fa-google-plus"></span></a></span>
+      </div>
+
     </div>
     <div class="col-md-6 content1-right">
       <b>Event Description</b>
       <div class="content1-left">
         {{eventDetails.eventDescription}}
-
       </div>
     </div>
   </div>
@@ -35,3 +43,10 @@
 <div class="container-fluid home-content2" *ngIf="eventDetails.newsAndAnnouncements">
   <p>{{eventDetails.newsAndAnnouncements}} </p>
 </div>
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Do you want to confirm?</p>
+    <button type="button" class="btn btn-default mr-2" (click)="confirm()">Yes</button>
+    <button type="button" class="btn btn-default" (click)="decline()">No</button>
+  </div>
+</ng-template>
