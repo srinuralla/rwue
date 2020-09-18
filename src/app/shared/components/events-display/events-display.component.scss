@@ -8,9 +8,18 @@
   justify-content: center;
   height: 96px;
 }
+.social-icons {
+  float: right !important;
+  display: flex;
+}
 .social-card-header i {
   font-size: 32px;
   color: #fff;
+}
+.d-flex {
+  display: flex !important;
+  justify-content: flex-end;
+  width: 100%;
 }
 .bg-facebook {
   background-color: #3b5998;
