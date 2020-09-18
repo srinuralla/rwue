@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rwe"
+    }
+  },
+  "defaultProject": "rwe",
+  "cli": {
+    "analytics": "66d27f9d-97e6-4bcc-a4b8-be8bf8aafe6a"
+  }
 }

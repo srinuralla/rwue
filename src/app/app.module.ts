@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BasicAuthInterceptorService } from './services/basic-auth-interceptor.service';
 import { ToastrModule } from 'ngx-toastr';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [AppComponent, LayoutComponent, LoginComponent],

@@ -6,8 +6,11 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-  },
-];
+
+  } {
+    path: '',
+    loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
+  }]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
