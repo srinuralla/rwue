@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', component: EducationComponent },
   {
     path: 'women-education',
+    component: EducationComponent,
     loadChildren: () =>
       import('./modules/women-education/women-education.module').then(
         (m) => m.WomenEducationModule
@@ -14,6 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'child-education',
+    component: EducationComponent,
     loadChildren: () =>
       import('./modules/child-education/child-education.module').then(
         (m) => m.ChildEducationModule

@@ -10,6 +10,6 @@ export class EventsDisplayComponent {
   @Input() eventList: any[];
   constructor(private router: Router) {}
   navigateClick(e) {
-    this.router.navigate(e.routerLink);
+    this.router.navigate(e.routeLink);
   }
 }

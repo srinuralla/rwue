@@ -25,6 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'education',
+    component: LayoutComponent,
     loadChildren: () =>
       import('./modules/education/education.module').then(
         (m) => m.EducationModule

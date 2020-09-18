@@ -1,0 +1,52 @@
+[
+  {
+    "eventDate": "19-09-2020",
+    "noOfDays": "2",
+    "title": "Women Empowerment",
+    "image": "https://www.shethepeople.tv/wp-content/uploads/2016/06/smiles_and_determination_of_rural_indian_women_6-e1553507990690.jpg",
+    "location": "Madhavaram",
+    "startTime": "10:30 AM",
+    "endTime": "5:30 PM",
+    "facebookLink": null,
+    "routeLink": null
+  },
+  {
+    "eventDate": "22-10-2020",
+    "noOfDays": "1",
+    "title": "Techie Women",
+    "image": "https://www.shethepeople.tv/wp-content/uploads/2016/06/smiles_and_determination_of_rural_indian_women_6-e1553507990690.jpg",
+    "location": "Sadkapalli",
+    "startTime": "10:30 AM",
+    "endTime": "3:30 PM",
+    "facebookLink": null,
+    "googlePlueLink": null,
+    "twitterLink": null,
+    "routeLink": null
+  },
+  {
+    "eventDate": "02-11-2020",
+    "noOfDays": "1",
+    "title": "Healthy Women Talks",
+    "image": "https://www.shethepeople.tv/wp-content/uploads/2016/06/smiles_and_determination_of_rural_indian_women_6-e1553507990690.jpg",
+    "location": "bodupalli",
+    "startTime": "10:30 AM",
+    "endTime": "12:30 PM",
+    "facebookLink": null,
+    "googlePlueLink": null,
+    "twitterLink": null,
+    "routeLink": null
+  },
+  {
+    "eventDate": "12-11-2020",
+    "noOfDays": "1",
+    "title": "Making money out of their skills",
+    "image": "https://www.shethepeople.tv/wp-content/uploads/2016/06/smiles_and_determination_of_rural_indian_women_6-e1553507990690.jpg",
+    "location": "machupalli",
+    "startTime": "10:30 AM",
+    "endTime": "1:30 PM",
+    "facebookLink": null,
+    "googlePlueLink": null,
+    "twitterLink": null,
+    "routeLink": null
+  }
+]

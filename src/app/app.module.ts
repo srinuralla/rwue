@@ -21,7 +21,6 @@ import { HeaderComponent } from './core/header/header.component';
     AppComponent,
     LoginComponent,
     VolunteerRegistrationComponent,
-    EventsDisplayComponent,
     LayoutComponent,
     HeaderComponent,
   ],
