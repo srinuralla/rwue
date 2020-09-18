@@ -1,32 +1,35 @@
-<div class="card flex-md-row mb-4 shadow-sm h-md-250" *ngFor="let item of eventList">
-  <div class="card-body d-flex flex-column align-items-start">
-    <strong class="d-inline-block mb-2 text-primary">
-      <a (click)="navigateClick(item)">
-        {{item.title }}
-      </a>
-    </strong>
-    <h6 class="mb-0">
-      {{item.eventDate}}
-    </h6>
-    <div class="mb-1 text-muted small">
-      Start Time : {{item.startTime }} &nbsp;&nbsp;
-      End Time : {{item.endTime}}
+<div class="container">
+  <div class="card flex-md-row mb-4 shadow-sm h-md-250" *ngFor="let item of eventList">
+    <div class="card-body d-flex flex-column align-items-start">
+      <strong class="d-inline-block mb-2 text-primary">
+        <a (click)="navigateClick(item)">
+          {{item.title }}
+        </a>
+      </strong>
+      <h6 class="mb-0">
+        {{item.eventDate}}
+      </h6>
+      <div class="mb-1 text-muted small">
+        Start Time : {{item.startTime }} &nbsp;&nbsp;
+        End Time : {{item.endTime}}
+      </div>
+      <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+        content.</p>
+
+      <ul *ngIf=" item.facebookLink || item.twitterLink|| item.googlePlueLin">
+        <li class="facebook" style="width:33%;" *ngIf="item.facebookLink"><a href="{{item.facebookLink}}"><span
+              class="fa fa-facebook"></span></a></li>
+        <li class="twitter" style="width:34%;" *ngIf="item.twitterLink"><a href="{{item.twitterLink}}"><span
+              class="fa fa-twitter"></span></a></li>
+        <li class="google-plus" style="width:33%;" *ngIf="item.googlePlueLink"><a href="{{item.googlePlueLink}}"><span
+              class="fa fa-google-plus"></span></a></li>
+      </ul>
+
+      <a class="btn btn-outline-primary btn-sm" role="button" (click)="navigateClick(item)">more details</a>
+
     </div>
-    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
-      content.</p>
-
-    <ul *ngIf=" item.facebookLink || item.twitterLink|| item.googlePlueLin">
-      <li class="facebook" style="width:33%;" *ngIf="item.facebookLink"><a href="{{item.facebookLink}}"><span
-            class="fa fa-facebook"></span></a></li>
-      <li class="twitter" style="width:34%;" *ngIf="item.twitterLink"><a href="{{item.twitterLink}}"><span
-            class="fa fa-twitter"></span></a></li>
-      <li class="google-plus" style="width:33%;" *ngIf="item.googlePlueLink"><a href="{{item.googlePlueLink}}"><span
-            class="fa fa-google-plus"></span></a></li>
-    </ul>
-
-    <a class="btn btn-outline-primary btn-sm" role="button" (click)="navigateClick(item)">more details</a>
-
+    <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="{{item.image}}"
+      style="width: 500px; height: 250px;">
   </div>
-  <img class="card-img-right flex-auto d-none d-lg-block" alt="Thumbnail [200x250]" src="{{item.image}}"
-    style="width: 200px; height: 250px;">
+
 </div>

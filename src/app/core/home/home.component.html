@@ -13,45 +13,52 @@
       </slide>
     </carousel>
   </div>
-  <div class="container marketing">
+  <div class="container marketing py-2">
 
     <!-- Three columns of text below the carousel -->
     <div class="row mt-3">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
+        <div class="d-flex justify-content-center">
+          <img src="assets/images/wemp.jpg " class=" rounded-circle" width="140" height="140">
+
+        </div>
+
         <h3>Women Unemployment</h3>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
-          vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
-          magna.</p>
+        <p>Women's empowerment is the process of empowering women. Empowerment can be defined in many ways, however,
+          when talking about women's empowerment, empowerment means accepting and allowing people (women) who are on the
+          outside of the decision-making process into it. Women’s empowerment is the most crucial point to be noted for
+          the overall development of a country. Empowerment is the process that creates power in individuals over their
+          own lives, society, and in their communities. People are empowered when they are able to access the
+          opportunities available to them without limitations and restrictions such as in education, profession and
+          lifestyle. Feeling entitled to make your own decisions creates a sense of empowerment. Empowerment includes
+          the action of raising the status of women through education, raising awareness, literacy, and training.
+          Women's empowerment is all about equipping and allowing women to make life-determining decisions through the
+          different problems in society.</p>
         <p><a class="btn btn-secondary" [routerLink]="['/unemployment']" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
+        <div class="d-flex justify-content-center mb-2">
+          <img src="assets/images/women_edu.jpg " class=" rounded-circle" width="140" height="140">
+
+        </div>
         <h3>Women Education</h3>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis
-          consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        <p>Women education refers to every form of education that aims at improving the knowledge, and skill of women
+          and girls. It includes general education at schools and colleges, vocational and technical education,
+          professional education, health education, etc. Women education encompasses both literary and non-literary
+          education.
         </p>
         <p><a [routerLink]="['/education/women']" class="btn btn-secondary" role="button">View details &raquo;</a>
         </p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-        </svg>
+        <div class="d-flex justify-content-center mb-2">
+          <img src="assets/images/education.jpg " class=" rounded-circle" width="140" height="140">
+
+        </div>
         <h3>Child Education</h3>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus.</p>
+        <p>Education sets in motion a virtuous spiral: girls and women gain greater knowledge, skills, self-confidence
+          and capabilities, improving their own life prospects—and, in turn, an educated woman provides better
+          nutrition, health care, and education for her family</p>
         <p><a class="btn btn-secondary" [routerLink]="['/education/child']" role="button">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -81,7 +88,28 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-6 gedf-main">
+        <div class="col-md-6 gedf-main  games-schedule">
+
+
+          <div class="">
+            <div class="games-schedule-items" *ngFor="let item of recentEvents">
+              <div class="row games-team">
+                <div class="col-md-5">
+                  <img src="assets/images/slide1.jpg" style="width: 300px;height: 150px;">
+                  <span>{{item.Header}}</span>
+                </div>
+
+              </div>
+              <div class="row games-info">
+                <div class="col-md-12">
+                  <p><span class="glyphicon glyphicon-play-circle"></span> <small>{{item.EventDate}}</small></p>
+                  <p class="games-dash"></p>
+                  <p><small>{{item.newsAndAnnouncements}}</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
 
         </div>
@@ -112,64 +140,19 @@
   </div>
   <!-- Info -->
 
-  <div class="container-fluid card">
-    <div class="container">
-      <div class="card-deck mb-5 mt-5 text-center">
-        <div class="card box-shadow width-max">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Lorem ipsum</h4>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="images/icon1.png" alt="icon1">
-            <p class="card_text">Aenean consequat at tortor ac feugiat. Praesent at tristique ipsum. Cras henrit
-              volutpat vulputate.</p>
-            <a href="#" class="more_info">more info</a>
-          </div>
-        </div>
-        <div class="card box-shadow width-max">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Dolor sit amet</h4>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="images/icon2.png" alt="icon2">
-            <p class="card_text">Aenean consequat at tortor ac feugiat. Praesent at tristique ipsum. Cras henrit
-              volutpat vulputate.</p>
-            <a href="#" class="more_info">more info</a>
-          </div>
-        </div>
-        <div class="card box-shadow width-max">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Nullam in ultricies</h4>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="images/icon3.png" alt="icon3">
-            <p class="card_text">Aenean consequat at tortor ac feugiat. Praesent at tristique ipsum. Cras henrit
-              volutpat vulputate.</p>
-            <a href="#" class="more_info">more info</a>
-          </div>
-        </div>
-        <div class="card box-shadow width-max">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Vestibulum at sapie</h4>
-          </div>
-          <div class="card-body">
-            <img class="img-fluid" src="images/icon4.png" alt="icon4">
-            <p class="card_text">Aenean consequat at tortor ac feugiat. Praesent at tristique ipsum. Cras henrit
-              volutpat vulputate.</p>
-            <a href="#" class="more_info">more info</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Info -->
+
+
   <!-- Quote -->
 
   <div class="container-fluid text_bg">
     <div class="container">
       <div class="row">
-        <div class="col-12 text1">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elementum diam.“
-        </div>
+        <marquee behavior="" direction="">
+          <div class="col-12 text1">“Education is one thing no one can take away from you. If you educate a man, you
+            educate an individual. But if you educate a woman, you educate a nation. When girls are educated, their
+            countries become stronger and more prosperous.“
+          </div>
+        </marquee>
       </div>
     </div>
   </div>
@@ -181,7 +164,7 @@
       <footer class="pt-4 pt-md-5 pb-md-4">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
-            <h5 class="tabs">COMPANY</h5>
+            <h5 class="tabs">TechnoFlair Solutions</h5>
             <ul class="list text-small footer-list">
               <li><a class="text-muted" href="#">About us</a></li>
               <li><a class="text-muted" href="#">Career</a></li>
@@ -215,6 +198,8 @@
 
           </div>
         </div>
+        <p class="copy-right"><i class="fa fa-copyright" aria-hidden="true"></i> 2018 Technoflair Solutions. All Rights
+          Reserved.</p>
       </footer>
     </div>
   </div>
