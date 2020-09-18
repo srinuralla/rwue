@@ -6,10 +6,7 @@ import { VolunteerRegistrationComponent } from './modules/volunteer-registration
 import { LayoutComponent } from './shared/components/layout/layout.component';
 
 const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent,
-  },
+
   {
     path: '',
     component: LayoutComponent,
@@ -31,11 +28,11 @@ const routes: Routes = [
         (m) => m.EducationModule
       ),
   },
-  { path: 'register', component: VolunteerRegistrationComponent },
+  { path: 'login', component: VolunteerRegistrationComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

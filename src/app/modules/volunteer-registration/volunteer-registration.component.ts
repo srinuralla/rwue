@@ -48,7 +48,11 @@ export class VolunteerRegistrationComponent implements OnInit {
     }
   }
   register() {
-    this.toastr.success('Registered Successfully');
-    this.router.navigate(['']);
+    if (this.registrationForm.value.firstName) {
+      localStorage.setItem('rwue_token', 'token');
+      localStorage.setItem('name', this.registrationForm.value.firstName);
+      this.toastr.success('Registered Successfully');
+      this.router.navigate(['']);
+    }
   }
 }
