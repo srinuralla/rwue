@@ -1,0 +1,76 @@
+<div class="sidenav">
+  <div class="login-main-text">
+    <h2>RWE<br> Registration Page</h2>
+    <p>RWE</p>
+  </div>
+</div>
+<div class="main d-flex justify-content-center">
+  <div class="col-md-6 col-sm-12 mt-4">
+
+    <div class="main-center">
+      <h5 class="text-center">Registration</h5>
+      <form class="" [formGroup]="registrationForm">
+
+        <div class="form-group">
+          <label for="name">First Name</label>
+          <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" formControlName="firstName" placeholder="First Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" formControlName="userName" placeholder="Username" />
+        </div>
+
+        <div class="form-group">
+          <label for="username">Gender</label>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio1">
+              <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Female" checked>Female
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio2">
+              <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Male">Male
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+
+          <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" formControlName="email" placeholder="Enter your Email" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Phone Number</label>
+
+          <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" formControlName="phoneNumber" placeholder="Mobile Number" />
+
+        </div>
+
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+          <input type="password" class="form-control" formControlName="password" placeholder="Enter your Password" />
+
+        </div>
+
+        <div class="form-group">
+          <label for="confirm">Confirm Password</label>
+          <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+          <input type="password" class="form-control" formControlName="confirmPassword"
+            placeholder="Confirm your Password" />
+
+        </div>
+
+        <button type="submit" class="btn btn-black float-right">Submit</button>
+
+      </form>
+    </div>
+  </div>
+</div>
