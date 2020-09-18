@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="row" style='background-image: url(" assets/images/event4.jpg"), linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)); background-repeat: no-repeat; background-size: 100% 100%; opacity: 0.7; background-blend-mode:
+    overlay; '>
+
+    <div class=" col-sm-7">
+      <div class="container">
+        <form class="form form--register p-4 float-left"
+          style=" box-shadow: 10px 10px 5px black;background-color: #F8F8FA; width: 30rem" [formGroup]="createEventForm"
+          action="">
+
+          <div class="form__helper">
+            <input type="text" name="eventName" formControlName="eventName" id="eventName" placeholder="eventName"
+              class="form__input mt-2" />
+            <label class="form__label" for="title">Event Name</label>
+          </div>
+
+          <div class="form__helper">
+            <input type="text" name="location" formControlName="location" id="location" placeholder="location"
+              class="form__input mt-2" />
+            <label class="form__label " for="location">Location</label>
+          </div>
+
+          <div class="form__helper">
+            <input type="date" name="startDate" formControlName="startDate" id="startDate" placeholder="startDate"
+              class="form__input mt-2" />
+            <label class="form__label " for="startDate">Start Date</label>
+          </div>
+
+          <div class="form__helper">
+            <input type="date" name="endDate" formControlName="endDate" id="endDate" placeholder="endDate"
+              class="form__input mt-2" />
+            <label class="form__label " for="endDate">End Date</label>
+          </div>
+
+          <div class="form__helper ">
+            <input type="text" name="contact" formControlName="contact" id="contact" Placeholder="contact"
+              class="form__input mt-2" />
+            <label class="form__label " for="qualification">Contact</label>
+          </div>
+          <div class="form__helper ">
+
+            <div class="form__helper">
+              <input type="email" name="email" formControlName="email" id="email" placeholder="Email"
+                class="form__input mt-2" />
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <textarea name="fullAddress" formControlName="fullAddress" id="fullAddress" placeholder="Full Address"
+              class="form__input"></textarea>
+            <label class="form__label mt-2" for="fullAddress">Full Address</label>
+          </div>
+          <div class="form__helper ">
+            <textarea name="decription" formControlName="eventDesc" id="decription" placeholder="Description"
+              class="form__input"></textarea>
+            <label class="form__label" for="decription">Event Description</label>
+          </div>
+          <button type="submit" class="btn btn-secondary w-50 float-right" (click)="createEvent()">Create Event</button>
+        </form>
+      </div>
+    </div>

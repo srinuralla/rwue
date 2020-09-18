@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row" style="background-image: url('assets/images/wemp.jpg');
+background-repeat: no-repeat;
+background-size: 100% 100%; opacity: 0.9;">
+
+    <div class="col-sm-7">
+      <div class="container">
+        <form class="form form--register p-4 float-left" style="background-color: #F8F8FA; width: 30rem"
+          [formGroup]="postJobsForm" action="">
+
+          <div class="form__helper">
+            <input type="text" name="title" formControlName="title" id="title" placeholder="title"
+              class="form__input" />
+            <label class="form__label" for="title">Title</label>
+          </div>
+
+          <div class="form__helper">
+            <select class="form__input mt-3" (change)="changeJob($event)" formControlName="category">
+              <option value="" disabled>Category</option>
+              <option *ngFor="let item of categories" [ngValue]="item.jobCategory"> {{item.jobCategory}} </option>
+            </select>
+            <label class="form__label">Category</label>
+          </div>
+
+
+          <div class="form__helper">
+            <input type="text" name="location" formControlName="location" id="location" placeholder="location"
+              class="form__input mt-2" />
+            <label class="form__label " for="location">Location</label>
+          </div>
+
+          <div class="form__helper ">
+            <input type="text" name="qualification" formControlName="qualification" id="qualification"
+              Placeholder="Qualification" class="form__input mt-2" />
+            <label class="form__label " for="qualification">Qualification</label>
+          </div>
+
+          <div class="form__helper">
+            <select class="form__input mt-3" (change)="jobTypeChange($event)" formControlName="category">
+              <option value="" disabled>Job Type</option>
+              <option *ngFor="let item of jobType" [ngValue]="item.jobType"> {{item.jobType}} </option>
+            </select>
+            <label class="form__label" formControlName="">Job Type</label>
+          </div>
+
+          <div class="form__helper ">
+            <input type="text" name="salary" formControlName="salary" id="salary" Placeholder="Salary"
+              class="form__input mt-2" />
+            <label class="form__label " for="qualification">Salary</label>
+          </div>
+          <div class="form__helper ">
+            <textarea name="skills" formControlName="skills" id="skills" placeholder="Skills"
+              class="form__input"></textarea>
+            <label class="form__label mt-2" for="decription">Skills</label>
+          </div>
+          <div class="form__helper ">
+            <textarea name="decription" formControlName="decription" id="decription" placeholder="Description"
+              class="form__input"></textarea>
+            <label class="form__label" for="decription">Description</label>
+          </div>
+          <button type="submit" class="btn btn-secondary w-50 float-right" (click)="postJob()">Post</button>
+        </form>
+      </div>
+    </div>
