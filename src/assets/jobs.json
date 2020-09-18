@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Farmer - Cotton field",
+    "id": 1,
+    "desc": "Need a women farmer who can take care of the cotton farm",
+    "location": "Raypur",
+    "date": "22-12-2020",
+    "companyDesc": "",
+    "qualification": "",
+    "skills": "",
+    "jobType": "Daily Wage"
+  },
+  {
+    "title": "Cook",
+    "id": 2,
+    "desc": "Need a vegetarian cook who can make authentic and delicious food.",
+    "location": "Miriyalguda",
+    "date": "31-08-2020",
+    "companyDesc": "",
+    "qualification": "",
+    "skills": "",
+    "jobType": "Monthly"
+  },
+  {
+    "title": "Kuli - Building Construction",
+    "id": 3,
+    "desc": "Need a daily wage kuli who can work for 66 hours daily",
+    "location": "Hyderabad",
+    "date": "20-10-2020",
+    "companyDesc": "",
+    "qualification": "",
+    "skills": "",
+    "JobType": "Daily Wage"
+  },
+  {
+    "title": "Craft maker",
+    "id": 4,
+    "desc": "Looking for a person crafts for a new house.",
+    "location": "Hyderabad",
+    "date": "21-11-2020",
+    "companyDesc": "Homely constructions",
+    "qualification": "",
+    "skills": "Craft Maker",
+    "JobType": "Daily Wage"
+  },
+  {
+    "title": "Maid",
+    "id": 5,
+    "desc": "Need a maid at home who can look after all households",
+    "location": "Bangalore",
+    "date": "12-12-2020",
+    "companyDesc": "",
+    "qualification": "",
+    "skills": "",
+    "JobType": "Monthly"
+  }
+]

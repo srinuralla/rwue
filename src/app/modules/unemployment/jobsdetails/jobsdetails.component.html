@@ -1,0 +1,62 @@
+<section>
+  <div class="block no-padding">
+    <div class="container-fluid no-gutters p-0">
+      <div class="jobtitle-block">
+        <div class="job-title">
+          <h3>Job Details</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 column">
+        <div class="job-single-sec">
+          <div class="job-single-head">
+            <div class="job-thumb"> <img src="images/resource/sj.png" alt=""> </div>
+            <div class="job-head-info">
+              <h4>{{currentJob.title}}</h4>
+              <span>{{currentJob.location}}</span>
+              <p> +xxxxxxxxx</p>
+              <p> mail@mail.com</p>
+            </div>
+          </div><!-- Job Head -->
+          <div class="job-details">
+            <h3>Job Description</h3>
+            <p> {{currentJob.desc}}</p>
+            <h3>Required Knowledge, Skills, and Abilities</h3>
+            <ul>
+
+              {{currentJob.skills ? currentJob.skills : '--' }}
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-4 column">
+
+        <div class="job-overview">
+          <h3>Job Overview</h3>
+          <ul>
+            <li>
+              <h3>JobType</h3><span>{{currentJob.jobType}}</span>
+            </li>
+            <li>
+              <h3>Gender</h3><span>{{currentJob.date}}</span>
+            </li>
+            <li>
+              <h3>Career Level</h3><span>Executive</span>
+            </li>
+            <li>
+              <h3>Industry</h3><span>Management</span>
+            </li>
+
+          </ul>
+        </div><!-- Job Overview -->
+
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+[
+  {
+    "jobCategory": "Farming",
+    "noOfJobs": "2000"
+  },
+  {
+    "jobCategory": "Construction",
+    "noOfJobs": "1320"
+  },
+
+  {
+    "jobCategory": "Arts and Crafts",
+    "noOfJobs": "200"
+  },
+
+  {
+    "jobCategory": "Household Maids",
+    "noOfJobs": "1870"
+  },
+  {
+    "jobCategory": "Weaving",
+    "noOfJobs": "140"
+  },
+  {
+    "jobCategory": "Cooks",
+    "noOfJobs": "340"
+  },
+  {
+    "jobCategory": "Teaching",
+    "noOfJobs": "120"
+  },
+  {
+    "jobCategory": "Others",
+    "noOfJobs": "34"
+  }
+]
