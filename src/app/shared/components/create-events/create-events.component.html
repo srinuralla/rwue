@@ -45,13 +45,13 @@
                 class="form__input mt-2" />
               <label class="form__label" for="email">Email</label>
             </div>
-            <textarea name="fullAddress" formControlName="fullAddress" id="fullAddress" placeholder="Full Address"
-              class="form__input"></textarea>
+            <input type="text" name=" fullAddress" formControlName="fullAddress" id="fullAddress"
+              placeholder="Full Address" class="form__input" />
             <label class="form__label mt-2" for="fullAddress">Full Address</label>
           </div>
           <div class="form__helper ">
-            <textarea name="decription" formControlName="eventDesc" id="decription" placeholder="Description"
-              class="form__input"></textarea>
+            <input type="text" name="decription" formControlName="eventDesc" id="decription" placeholder="Description"
+              class="form__input" />
             <label class="form__label" for="decription">Event Description</label>
           </div>
           <button type="submit" class="btn btn-secondary w-50 float-right" (click)="createEvent()">Create Event</button>
