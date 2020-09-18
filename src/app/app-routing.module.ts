@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuardService } from './services/auth-guard.service';
 import { VolunteerRegistrationComponent } from './modules/volunteer-registration/volunteer-registration.component';
-
+import { LayoutComponent } from './shared/components/layout/layout.component';
 
 const routes: Routes = [
   {
@@ -12,10 +12,12 @@ const routes: Routes = [
   },
   {
     path: '',
+    component: LayoutComponent,
     loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
   },
   {
     path: 'unemployment',
+    component: LayoutComponent,
     loadChildren: () =>
       import('./modules/unemployment/unemployment.module').then(
         (m) => m.UnemploymentModule
@@ -28,13 +30,11 @@ const routes: Routes = [
         (m) => m.EducationModule
       ),
   },
-  { path: 'register', component: VolunteerRegistrationComponent }
-
-
+  { path: 'register', component: VolunteerRegistrationComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

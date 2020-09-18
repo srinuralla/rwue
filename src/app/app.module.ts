@@ -14,11 +14,17 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { VolunteerRegistrationComponent } from './modules/volunteer-registration/volunteer-registration.component';
 import { EventsDisplayComponent } from './shared/components/events-display/events-display.component';
 import { LayoutComponent } from './shared/components/layout/layout.component';
-
-
+import { HeaderComponent } from './core/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, VolunteerRegistrationComponent, EventsDisplayComponent, LayoutComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    VolunteerRegistrationComponent,
+    EventsDisplayComponent,
+    LayoutComponent,
+    HeaderComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,4 +42,4 @@ import { LayoutComponent } from './shared/components/layout/layout.component';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
