@@ -12,11 +12,13 @@ import { BasicAuthInterceptorService } from './services/basic-auth-interceptor.s
 import { ToastrModule } from 'ngx-toastr';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { VolunteerRegistrationComponent } from './modules/volunteer-registration/volunteer-registration.component';
+import { EventsDisplayComponent } from './shared/components/events-display/events-display.component';
+import { LayoutComponent } from './shared/components/layout/layout.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, VolunteerRegistrationComponent],
+  declarations: [AppComponent, LoginComponent, VolunteerRegistrationComponent, EventsDisplayComponent, LayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
